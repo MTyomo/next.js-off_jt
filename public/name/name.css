@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #f8f8f8;
+}
+
+.content {
+    font-size: 1em;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    margin-top: 100px;
+}
+
+.button {
+    border-radius: 8px;  /* 角を8px丸める */
+    padding: 6px 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button:hover {
+    background-color: #388E3C;
+}
