@@ -1,12 +1,9 @@
-// function butotnClick() {
-//     msg.innerText = 'お名前は' + nameText.value + 'さんですね';
-// }
+const nameText = document.getElementById('nameText');
+const msg = document.getElementById('msg');
+const checkButton = document.getElementById('checkButton');
+const errorMessage = document.getElementById('errorMessage'); // エラーメッセージ取得
 
-// let nameText = document.getElementById('nameText');
-// let msg = document.getElementById('msg');
-
-// let checkButton = document.getElementById('checkButton');
-// checkButton.addEventListener('click', butotnClick);
+checkButton.addEventListener('click', buttonClick);
 
 function buttonClick() {
     const name = nameText.value.trim(); // 前後の空白を除去
@@ -19,11 +16,4 @@ function buttonClick() {
         msg.innerText = 'こんにちは、' + name + 'さん😊！';
     }
 }
-
-let nameText = document.getElementById('nameText');
-let msg = document.getElementById('msg');
-let checkButton = document.getElementById('checkButton');
-let errorMessage = document.getElementById('errorMessage'); // エラーメッセージ取得
-
-checkButton.addEventListener('click', buttonClick);
 
