@@ -13,7 +13,7 @@ function buttonClick() {
         msg.innerText = '';                    // 挨拶メッセージはクリア
     } else {
         errorMessage.style.display = 'none';   // エラー非表示
-        msg.innerText = 'こんにちは、' + name + 'さん😊！';
+        msg.innerText = `こんにちは、${name}さん😊！`;
     }
 }
 
