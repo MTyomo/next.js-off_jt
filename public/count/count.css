@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #f8f8f8;
+}
+
+.title {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  margin: 0;
+  pointer-events: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.count {
+    font-size: 4em;
+    text-align: center;
+    flex: 1;
+    color: #333;
+}
+
+.side-button {
+    font-size: 4em;
+    padding: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    display: flex;
+    /* フレックスボックスを使う */
+    justify-content: center;
+    /* 水平方向の中央寄せ */
+    align-items: center;
+    /* 垂直方向の中央寄せ */
+}
+
+.side-button:hover {
+    background-color: #388E3C;
+}
+
+.floating {
+    position: absolute;
+    font-size: 1.5em;
+    color: #4CAF50;
+    opacity: 1;
+    animation: floatUp 1s ease-out forwards;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+}
