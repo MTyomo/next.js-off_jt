@@ -11,7 +11,7 @@
     <h1 class="title">ユーザー情報入力フォーム</h1>
     <form id="userForm">
 
-        <h1 class="error">*は必須項目</h1>
+        <p class="error">*は必須項目</p>
 
         <div class="form-group">
             <label for="name">名前*:</label><br />
@@ -42,10 +42,10 @@
         <button class="button" type="submit">送信</button>
 
         <!-- モーダル -->
-        <div id="modal" class="modal">
+        <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
             <div class="modal-content">
                 <span id="closeBtn" class="close">&times;</span>
-                <h2>送信データの確認</h2>
+                <h2 id="modalTitle">送信データの確認</h2>
                 <pre id="modalData"></pre>
                 <!-- <button id="modalOkBtn">OK</button> -->
             </div>
