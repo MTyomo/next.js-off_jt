@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>アンケートフォーム</title>
+    <link rel="stylesheet" href="survey.css" />
+</head>
+
+<body>
+    <h1 class="title">ユーザー情報入力フォーム</h1>
+    <form id="userForm">
+
+        <h1 class="error">*は必須項目</h1>
+
+        <div class="form-group">
+            <label for="name">名前*:</label><br />
+            <input type="text" id="name" name="name" placeholder="名前を入力" />
+            <div id="nameError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="age">年齢*（数値・18歳以上）:</label><br />
+            <input type="number" id="age" name="age" placeholder="年齢を入力" />
+            <div id="ageError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="job">職業*:</label><br />
+            <select id="job" name="job">
+                <option value="">選択してください</option>
+                <option value="学生">学生</option>
+                <option value="会社員">会社員</option>
+                <option value="フリーランス">フリーランス</option>
+                <option value="その他">その他</option>
+            </select>
+            <div id="jobError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="bio">自己紹介:</label><br />
+            <textarea id="bio" name="bio" rows="2" cols="40"></textarea>
+        </div>
+
+        <button class="button" type="submit">送信</button>
+
+        <!-- モーダル -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="closeBtn" class="close">&times;</span>
+                <h2>送信データの確認</h2>
+                <pre id="modalData"></pre>
+                <!-- <button id="modalOkBtn">OK</button> -->
+            </div>
+        </div>
+        <script src="survey.js"></script>
+    </form>
+
+</body>
+
+</html>
