@@ -21,7 +21,6 @@ body {
 
 .button {
     border-radius: 8px;
-    /* 角を8px丸める */
     padding: 6px 10px;
     border: none;
     background-color: #4CAF50;

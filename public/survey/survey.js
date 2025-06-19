@@ -1,14 +1,3 @@
-// const input = document.getElementById("username");
-// const value = input.value;
-// console.log("入力値：", value);
-
-// // バリデーションチェックのエラー表示
-// if (input.value === "") {
-//   document.getElementById("error").style.display = "block";
-// } else {
-//   document.getElementById("error").style.display = "none";
-// }
-
 document.getElementById('userForm').addEventListener('submit', function (event) {
     event.preventDefault(); // ページリロードを防ぐ
 
@@ -51,13 +40,11 @@ document.getElementById('userForm').addEventListener('submit', function (event) 
         bio
     };
 
-    // console.log('送信データ:', JSON.stringify(formData, null, 2));
-    // alert('データを送信しました（consoleに表示）');
-
     console.log('送信データ:', JSON.stringify(formData, null, 2));
 
     // モーダルにデータ表示
-    document.getElementById('modalData').textContent = JSON.stringify(formData, null, 2);
+  let displayData = `名前: ${formData.name}\n年齢: ${formData.age}\n職業: ${formData.job}\n自己紹介: ${formData.bio}`;
+document.getElementById('modalData').textContent = displayData;
     document.getElementById('modal').style.display = 'block';
 });
 
@@ -65,9 +52,6 @@ document.getElementById('userForm').addEventListener('submit', function (event) 
 document.getElementById('closeBtn').addEventListener('click', function () {
     document.getElementById('modal').style.display = 'none';
 });
-// document.getElementById('modalOkBtn').addEventListener('click', function () {
-//     document.getElementById('modal').style.display = 'none';
-// });
 
 // モーダルの外側クリックで閉じる
 window.addEventListener('click', function (e) {
