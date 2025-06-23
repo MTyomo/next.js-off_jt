@@ -50,6 +50,8 @@
 - 参考にした記事やドキュメント（あれば）：
 
 ## To レビューワー向け
+@gemini-code-assist
+Please write all review comments in Japanese.　
 
 <!-- 各コンテンツにある「評価観点」をコピペしてください　-->
 
