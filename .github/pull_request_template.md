@@ -33,6 +33,8 @@
 - 特に見てほしい箇所
 - 不安な点やレビューしてほしい観点など
 -->
+@gemini-code-assist
+Please write all review comments in Japanese.　
 
 ---
 
@@ -50,7 +52,6 @@
 - 参考にした記事やドキュメント（あれば）：
 
 ## To レビューワー向け
-@gemini-code-assist
-Please write all review comments in Japanese.　
+
 
 <!-- 各コンテンツにある「評価観点」をコピペしてください　-->
